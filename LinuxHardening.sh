@@ -34,7 +34,7 @@ dpkg-reconfigure -plow unattended-upgrades
 chmod 600 /etc/shadow
 
 # 7. Network Hardening (sysctl)
-cat <<EOF >> /etc/sysctl.conf
+cat << EOF >> /etc/sysctl.conf
 # Ignore ICMP broadcast requests
 net.ipv4.icmp_echo_ignore_broadcasts = 1
 # Disable source packet routing
